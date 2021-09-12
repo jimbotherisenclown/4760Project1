@@ -13,10 +13,10 @@ BINS   := $(SRCS:%.c=%)                #Stores all values in SRCS as vars withou
 all    : $(BINS)                       #All values stored in BINS are executed as separate targets
 
 %      : %.o                           #Expands each value in BINS and targets %.o with the same value
-   	${CC} ${CFLAGS} $< -o $@       #Compiles with the appropriate flags, $< -o $@ expand to foo.o -o foo on execution
+	${CC} ${CFLAGS} $< -o $@       #Compiles with the appropriate flags, $< -o $@ expand to foo.o -o foo on execution
 
 %.o    : %.c                           #Expands the value passed from % and sets foo.c as a prerequisite name
-   	${CC} ${DFLAGS} $<                    #Compiles the foo.o file into foo.c.
+	${CC} ${DFLAGS} $<                    #Compiles the foo.o file into foo.c.
 
 .PHONY : 
 	clean                          #Sets clean as a PHONY target

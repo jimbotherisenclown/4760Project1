@@ -1,18 +1,21 @@
 #include <stdlib.h>
 #include <string.h>
-#include "log.h"
+#include "liblog.h"
 
 typedef struct list_struct {
 	data_t item;
 	struct list_struct *next;
 } log_t;
 
-static log_t *headptr = NULL;
-static log_t *tailptr = NULL;
+//static log_t *headptr = NULL;
+//static log_t *tailptr = NULL;
 
-int addmsg(data_t data) {
-	list_t *newnode;
-	int nodesize;
+int main() {
+}
+
+int addmsg(const char type, const char * msg) {
+	//log_t *newnode;
+	//int nodesize;
 	return 0;
 }
 
