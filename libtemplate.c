@@ -11,6 +11,8 @@ static log_t *headptr = NULL;
 static log_t *tailptr = NULL;
 
 int addmsg(data_t data) {
+	list_t *newnode;
+	int nodesize;
 	return 0;
 }
 
